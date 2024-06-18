@@ -1,5 +1,4 @@
 
-var maxDist;
 
 function setup()
 {
@@ -20,17 +19,26 @@ function draw()
 		for(var i = 0; i < 3; i++)
 		{
 			fill(random(255), random(255), random(255));
-			rect(0 + j * 300, 0 + i * 300 ,300,300)
+			rect(0 + j * 300, 0 + i * 300 ,300,300);
 			
 
 			fill(random(255), random(255), random(255));
-			ellipse(150 + j * 300, 150 + i * 300, 160, 140);  // heads
+			ellipse(150 + j * 300, 150 + i * 300, 130, 140);  // heads
+
+			
+
+
 			ellipse(105 + j * 300, 70 + i * 300, 50,100); // ears
 			ellipse(190 + j * 300, 70 + i * 300, 50,100); // ears
+
 
 			fill(255);
 			ellipse(120 + j * 300,120 + i * 300,20,20); // eyes
 			ellipse(175 + j * 300,120 + i * 300,20,20); // eyes
+
+			fill(200);
+			ellipse(105 + j * 300, 70 + i * 300, 40,70); // ears
+			ellipse(190 + j * 300, 70 + i * 300, 40,70); // ears
 
 			// nose
 			fill(0);
@@ -39,7 +47,7 @@ function draw()
 				 140 + j * 300,
 				 150 + i * 300,
 				 160 + j * 300,
-				 150 + i * 300)
+				 150 + i * 300);
 
 			// teeth
 			fill(255);
